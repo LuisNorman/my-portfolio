@@ -5,7 +5,7 @@ phases:
     command:
       - echo Nothing to do yet
 
-artificats:
+artifacts:
   files:
     - index.html
     - favicon.ico
