@@ -1,0 +1,14 @@
+version: 0.1
+
+phases:
+  build:
+    command:
+      - echo Nothing to do yet
+
+artificats:
+  files:
+    - index.html
+    - favicon.ico
+    - LuisNormanResume.pdf
+    - syles/main.css
+    - images/*
