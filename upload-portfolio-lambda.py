@@ -29,7 +29,7 @@ def lambda_handler(event, context):
         topic.publish(Subject="Portfolio Not Deployed!", Message="Your portfolio was NOT deployed successfully.")
         raise
     # TODO implement
-    # return {
-    #     'statusCode': 200,
-    #     'body': json.dumps('Hello from Lambda!')
-    # }
+    return {
+        'statusCode': 200,
+        'body': json.dumps('Hello from Lambda!')
+    }
