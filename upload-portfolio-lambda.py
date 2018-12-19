@@ -43,13 +43,6 @@ def lambda_handler(event, context):
 
             return codepipeline.put_job_success_result(jobId=job["id"])
 
-        # return pipeline.put_job_success_result(jobId=event['CodePipeline.job']['id'])
-
     except:
         topic.publish(Subject="Portfolio Not Deployed!", Message="Your portfolio was NOT deployed successfully.")
         raise
-    # # TODO implement
-    # return {
-    #     'statusCode': 200,
-    #     'body': json.dumps('Hello from Lambda!')
-    # }
